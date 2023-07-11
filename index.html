@@ -1,38 +1,126 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fotografie z wczasów</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <div class="container p-2">
+      <a class="navbar-brand" href="#"><i class="bi bi-laptop me-2"></i>Web developer</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav  ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Start</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">O mnie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="home">
+    <div class="container h-100 d-flex flex-column justify-content-center align-items-center text-light text-center">
+      <p class="display-1">Web developer</p>
+      <p class="welcome-text mb-5">
+        Zaprojektuję Ci stronę internetowa szybko i przyjaźnie
+      </p>
+      <a href="#aboutme" class="btn btn-outline-light">poznaj mnie</a>
+      <div class="hero-shadow"></div>
+    </div>
+  </section>
+
+  <main>
+    <section class="aboutme" id="aboutme">
+      <div class="card">
+        <img src="./img/marek.JPG" class="card-img-top" alt="zdjęcie autora strony">
+        <div class="card-body">
+          <h5 class="card-title">Zenon Marek Raubuć</h5>
+          <p class="card-text">
+            Na co dzień pracuję jako technik utrzymania ruchu. Programowanie to moje hobby. Interesuję się również
+            polityką, sztuką i kulturą. Chętnie podejmę się współpracy przy projekcie programistycznym zarówno w
+            zakresie frontendu jaki i backendu. Zajmuję się też projektowaniem stron internetowych. Jeśli chcesz mieć
+            taką stronę jak ta, gdzie możesz umieszczać zdjęcia albo prowadzisz biznes i chcesz, go zareklamować w
+            interencie to skontaktuj się ze mną.
+          </p>
+          <a href="https://raubuc.net" class="btn btn-primary" target="_blank">Programista hobbysta</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+      <h2 class="text-center p-5">Galeria zdjęć z miejsc, które warto odwiedzić </h2>
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/city.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/city-one.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/atlas.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/kwiaty.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+
+          <p>Web developer</p>
+          <p>
+            <i class="bi bi-geo-alt"></i>53-425 Wrocław
+          </p>
+          <p>ul. Kwaśna 4/7 </p>
+          <p><i class="bi bi-phone orange-color"></i>+48 780 026 241</p>
+          <p><i class="bi bi-at orange-color"></i> m.raubuc@wp.pl</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="bg-dark text-light border-top">
+    <p class="text-center mb-0 py-5">&copy; Web developer 2023</p>
+  </footer>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
+
 </html>

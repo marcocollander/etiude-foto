@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+}
+
+/* Nawigacja */
+
+.navbar-brand {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+.navbar-toggler {
+	font-size: 1.8rem;
+}
+
+i {
+	font-size: 1.8rem;
+}
+
+/* sekcja powitalna */
+.home {
+	position: relative;
+	height: 60rem;
+	background-image: url('../img/wilanow-small.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+}
+
+.home .btn {
+	padding: 1em 2em;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.home .welcome-text {
+	font-size: 2.2rem;
+}
+
+.hero-shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: -1;
+}
