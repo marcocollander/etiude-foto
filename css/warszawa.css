@@ -1,0 +1,43 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #333;
+	color: #fff;
+}
+
+.header {
+	margin: 100px 0 100px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 300;
+}
+
+.figure {
+	position: relative;
+}
+
+.figure__img {
+	max-width: 100%;
+}
+
+.figure__caption {
+	position: absolute;
+	left: 50%;
+	bottom: 5%;
+	transform: translate(-50%, -50%);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 2.2rem;
+	text-shadow: 1px 1px 10px black;
+	letter-spacing: 2px;
+	text-align: center;
+}

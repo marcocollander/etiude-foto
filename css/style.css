@@ -34,7 +34,7 @@ i {
 .home {
 	position: relative;
 	height: 60rem;
-	background-image: url('../img/wilanow-small.jpg');
+	background-image: url('../img/home/wilanow-small.jpg');
 	background-size: cover;
 	background-position: center;
 	z-index: 0;
@@ -56,8 +56,33 @@ i {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(0, 0, 0, 0.5);
 	z-index: -1;
 }
 
+.carousel__btn {
+	width: 4rem;
+	height: 4rem;
+	opacity: 1;
+}
 
+.carousel__btn:hover {
+	opacity: 1;
+}
+
+.carousel__link {
+	letter-spacing: 2px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 2.2rem;
+}
+
+.text-carousel {
+	text-shadow: 5px 1px 10px black;
+	font-weight: 700;
+}
+
+/* .carousel-control-prev-icon,
+.carousel-control-next-icon {
+	opacity: 1;
+} */
