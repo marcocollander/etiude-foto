@@ -17,6 +17,10 @@ body {
 
 /* Nawigacja */
 
+.navbar {
+	color: #333;
+}
+
 .navbar-brand {
 	text-transform: uppercase;
 	font-size: 1.8rem;
@@ -28,6 +32,16 @@ body {
 
 i {
 	font-size: 1.8rem;
+}
+
+.nav-link {
+	color: black;
+	/* font-weight: 600; */
+	font-size: 1.8rem;
+}
+
+a.nav-link:hover {
+	color: #333;
 }
 
 /* sekcja powitalna */
